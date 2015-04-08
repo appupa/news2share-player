@@ -1,0 +1,191 @@
+/* ----------------------------------------------------------- */
+/*                       THE PRELOADER                         */
+/* ----------------------------------------------------------- */
+
+/* the background gradient */
+#cj-wrapper {
+
+	background-color: #111; 
+	
+}
+
+#cj-container {
+
+	margin: -16px 0 0 -16px;
+	
+}
+
+.cj-preloader {
+	
+	/* The size of the "inner" circle */
+	width: 20px;
+	height: 20px;
+	
+	/* this should be the same number as the padding below */
+	margin: 5px;
+	
+}
+
+.cj-outside {
+	
+	/* The size of the preloader bar */
+	padding: 5px;
+																			/* <------ first color ------>              <-- second color --> */
+	background: url(../img/fallback_preloader.gif); /* fallback gif preloader */
+	background: -moz-linear-gradient(top,                                      #DDD 0%,               #DDD 25%,              #111 90%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #DDD), color-stop(25%, #DDD), color-stop(90%, #111));
+	background: -webkit-linear-gradient(top,                                   #DDD 0%,               #DDD 25%,              #111 90%);
+	background: -o-linear-gradient(top,                                        #DDD 0%,               #DDD 25%,              #111 90%);
+	background: -ms-linear-gradient(top,                                       #DDD 0%,               #DDD 25%,              #111 90%);
+	background: linear-gradient(to bottom,                                     #DDD 0%,               #DDD 25%,              #111 90%);
+	
+}
+
+/* This color should be the same as the first color in the background gradient above */
+.cj-inside {
+
+	background-color: #111;
+	
+}
+
+/* *************************************************************** */
+/* --------------------------------------------------------------- */
+/* UNDER THE HOOD: no need to edit below unless you really want to */
+/* --------------------------------------------------------------- */
+/* *************************************************************** */
+
+/* important for the gradient background to fill the screen */
+html, body {
+
+	min-width: 100%;
+	min-height: 100%;
+	
+}
+
+body {
+
+	margin: 0;
+	overflow: hidden;
+	
+}
+
+/* main background wrapper */
+#cj-wrapper {
+	
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+}
+
+/* main preloader container, center it on the screen */
+#cj-container {
+
+	position: absolute;
+	left: 50%;
+	top: 50%;
+
+	
+}
+
+/* main preloader div */
+.cj-preloader {
+
+	position: relative;
+	
+	-webkit-transition: opacity 0.4s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+	-moz-transition: opacity 0.4s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+	-o-transition: opacity 0.4s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+	-ms-transition: opacity 0.4s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+	transition: opacity 0.4s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+	
+}
+
+/* seperate class so we can add/remove it */
+.cj-spin {
+
+	-webkit-animation: rotator 1s linear infinite;
+	-moz-animation: rotator 1s linear infinite;
+	-o-animation: rotator 1s linear infinite;
+	-ms-animation: rotator 1s linear infinite;
+	animation: rotator 1s linear infinite;
+	
+}
+
+/* the outside of the preloader */
+.cj-outside {
+	
+	width: 100%;
+	height: 100%;
+	
+	display: inline-block;
+	position: absolute;
+	
+	top: -25%;
+	left: -25%;
+	
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	
+}
+
+/* the inside of the preloader */
+.cj-inside {
+	
+	width: 100%;
+	height: 100%;
+	
+	display: inline-block;
+	position: absolute;
+	
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	
+}
+
+/* below are the css3 keyframe animations that spin the preloader */
+@-webkit-keyframes rotator {
+
+	100%   { 
+		-webkit-transform: rotate(360deg);
+	}
+	
+}
+
+@-moz-keyframes rotator {
+
+	100%   { 
+		-moz-transform: rotate(360deg);
+	}
+	
+}
+
+@-o-keyframes rotator {
+
+	100%   { 
+		-o-transform: rotate(360deg);
+	}
+	
+}
+
+@-ms-keyframes rotator {
+
+	100%   { 
+		-ms-transform: rotate(360deg);
+	}
+	
+}
+
+@keyframes rotator {
+
+	100%   { 
+		transform: rotate(360deg);
+	}
+	
+}

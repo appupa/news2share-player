@@ -1,0 +1,977 @@
+/* --------------------------------------------- */
+/* Author: http://codecanyon.net/user/CodingJack */
+/* --------------------------------------------- */
+
+
+
+/* ********************************* */
+/* ********************************* */
+/*    GLOBAL FONTS/COLORS/OPACITY    */
+/* ********************************* */
+/* ********************************* */
+
+/* Background color for the video */
+html, body, .cj-video {
+
+	background-color: #111;
+	
+}
+
+/* The big play button */
+.cj-vid-play-btn {
+	
+	font-size: 64px;
+	height: 64px;
+	opacity: 0.8;
+	
+}
+
+/* The hover state for icons/buttons */
+.cj-vid-element:hover > .cj-vid-icon,
+.cj-context-menu li:hover > span,
+.cj-vid-social span:hover {
+
+	opacity: 0.5;	
+
+}
+
+/* The font-family for the video time */
+.cj-vid-container {
+
+	font-family: "Averia Sans Libre", sans-serif;	
+	
+}
+
+/* The font-family for the right-click menu */
+.cj-context-menu {
+	
+	font: 12px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	
+}
+
+/* The font size for the video time and right-click menu */
+.cj-vid-time,
+.cj-time-bubble {
+
+	font-size: 12px;
+	
+}
+
+/* The font size for the right-click copyright text */
+.cj-context-copyright span {
+	
+	font-size: 10px;
+	
+}
+
+
+/* ********************************* */
+/* ********************************* */
+/*          BEGIN LIGHT SKIN         */
+/* ********************************* */
+/* ********************************* */
+
+/* The icon and text color */
+.cj-vid-light {
+
+	color: #333;
+	
+}
+
+/* Color and shadow for the big play button */
+.cj-vid-light .cj-vid-play-btn {
+	
+	color: #FFF;
+	text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+	
+}
+
+/* The controls background */
+.cj-vid-light .cj-vid-controls {
+	
+	background: #fefefe; 
+	background: -moz-linear-gradient(top, #fefefe 0%, #e7e7e7 100%); 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fefefe), color-stop(100%, #e7e7e7)); 
+	background: -webkit-linear-gradient(top, #fefefe 0%, #e7e7e7 100%); 
+	background: -o-linear-gradient(top, #fefefe 0%, #e7e7e7 100%); 
+	background: -ms-linear-gradient(top, #fefefe 0%, #e7e7e7 100%); 
+	background: linear-gradient(to bottom, #fefefe 0%, #e7e7e7 100%); 
+	
+}
+
+/* The time bubble background */
+.cj-vid-light .cj-time-bubble {
+	
+	border: 1px solid #FFF;
+	
+	background: #e7e7e7; 
+	background: -moz-linear-gradient(top, #e7e7e7 0%, #fefefe 100%); 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e7e7e7), color-stop(100%, #fefefe)); 
+	background: -webkit-linear-gradient(top, #e7e7e7 0%, #fefefe 100%); 
+	background: -o-linear-gradient(top, #e7e7e7 0%, #fefefe 100%); 
+	background: -ms-linear-gradient(top, #e7e7e7 0%, #fefefe 100%); 
+	background: linear-gradient(to bottom, #e7e7e7 0%, #fefefe 100%); 	
+	
+}
+
+/* The time bubble arrow */
+.cj-vid-light .cj-time-bubble:after {
+	
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-top: 7px solid #FFF;
+	
+}
+
+/* Button dividers */
+.cj-vid-light .cj-vid-element {
+
+	border-left: 1px solid #DDD;
+	border-right: 1px solid #FFF;
+	
+}
+
+/* shadow for the button icons */
+.cj-vid-light .cj-vid-icon {
+
+	text-shadow: 1px 1px 0 #FFF;
+	
+}
+
+/* The video scrub total line */
+.cj-vid-light .cj-vid-total {
+	
+	background-color: #555;
+	
+	-moz-box-shadow: 1px 1px 0 #FFF;
+	-webkit-box-shadow: 1px 1px 0 #FFF;
+	box-shadow: 1px 1px 0 #FFF;
+	
+}
+
+/* The video total volume line */
+.cj-vid-light .cj-vid-vol-total {
+	
+	background-color: #333;
+	
+	-moz-box-shadow: 1px 1px 0 #FFF;
+	-webkit-box-shadow: 1px 1px 0 #FFF;
+	box-shadow: 1px 1px 0 #FFF;
+	
+}
+
+/* The progress lines fo the video and volume */
+.cj-vid-light .cj-vid-progress,
+.cj-vid-light .cj-vid-vol-current {
+
+	background-color: #888;
+	
+}
+
+/* The video buffer line */
+.cj-vid-light .cj-vid-buffer {
+
+	background-color: #333;
+	
+}
+
+/* Button divider */
+.cj-vid-light .cj-divider-left {
+	
+	background-color: #DDD;
+	
+}
+
+/* Button divider */
+.cj-vid-light .cj-divider-right {
+	
+	background-color: #FFF;
+	
+}
+
+/* The right-click menu */
+.cj-vid-light .cj-context-menu {
+	
+	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.20);
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.20);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.20);
+	
+	background: #f5f5f5; 
+	background: -moz-linear-gradient(top, #f5f5f5 0%, #e7e7e7 100%); 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f5f5f5), color-stop(100%, #e7e7e7)); 
+	background: -webkit-linear-gradient(top, #f5f5f5 0%, #e7e7e7 100%); 
+	background: -o-linear-gradient(top, #f5f5f5 0%, #e7e7e7 100%); 
+	background: -ms-linear-gradient(top, #f5f5f5 0%, #e7e7e7 100%); 
+	background: linear-gradient(to bottom, #f5f5f5 0%, #e7e7e7 100%);
+	
+}
+
+/* right-click menu item dividers */
+.cj-vid-light .cj-context-menu li {
+	
+	border-top: 1px solid #FFF;
+	border-bottom: 1px solid #DDD;
+	
+}
+
+/* The right-click menu copyright text */
+.cj-vid-light .cj-context-copyright span {
+	
+	background-color: #999;
+	color: #FFF;
+	
+	border-bottom: 1px solid #FFF;
+	
+	-moz-box-shadow: inset 0 0 4px #777;
+	-webkit-box-shadow: inset 0 0 4px #777;
+	box-shadow: inset 0 0 4px #777;
+	
+}
+
+/* Safari fix (border doesn't look so great) */
+.cj-vid-light .cj-no-copy-border {
+
+	border-bottom: 0 !important;
+	
+}
+
+
+/* ********************************* */
+/* ********************************* */
+/*          BEGIN DARK SKIN          */
+/* ********************************* */
+/* ********************************* */
+
+/* The icon and text color */
+.cj-vid-dark {
+
+	color: #BBB;
+	
+}
+
+/* Color and shadow for the big play button */
+.cj-vid-dark .cj-vid-play-btn {
+	
+	color: #CCC;
+	text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+	
+}
+
+/* The controls background */
+.cj-vid-dark .cj-vid-controls {
+	
+	background: #222; 
+	background: -moz-linear-gradient(top, #333 0%, #222 100%); 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #333), color-stop(100%, #222)); 
+	background: -webkit-linear-gradient(top, #333 0%, #222 100%); 
+	background: -o-linear-gradient(top, #333 0%, #222 100%); 
+	background: -ms-linear-gradient(top, #333 0%, #222 100%); 
+	background: linear-gradient(to bottom, #333 0%, #222 100%); 
+	
+}
+
+/* The video time text color */
+.cj-vid-dark .cj-vid-time {
+	
+	color: #C5C5C5;
+	
+}
+
+/* The time bubble background */
+.cj-vid-dark .cj-time-bubble {
+	
+	color: #C5C5C5;
+	border: 1px solid #333;
+	
+	background: #222; 
+	background: -moz-linear-gradient(top, #222 0%, #333 100%); 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #222), color-stop(100%, #333)); 
+	background: -webkit-linear-gradient(top, #222 0%, #333 100%); 
+	background: -o-linear-gradient(top, #222 0%, #333 100%); 
+	background: -ms-linear-gradient(top, #222 0%, #333 100%); 
+	background: linear-gradient(to bottom, #222 0%, #333 100%); 	
+	
+}
+
+/* The time bubble arrow */
+.cj-vid-dark .cj-time-bubble:after {
+	
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-top: 7px solid #333;
+	
+}
+
+/* Button dividers */
+.cj-vid-dark .cj-vid-element {
+
+	border-left: 1px solid #000;
+	border-right: 1px solid #444;
+	
+}
+
+/* shadow for the button icons */
+.cj-vid-dark .cj-vid-icon {
+
+	text-shadow: 1px 1px 0 #000;
+	
+}
+
+/* The video scrub total line */
+.cj-vid-dark .cj-vid-total {
+	
+	background-color: #777;
+	
+	-moz-box-shadow: 1px 1px 0 #000;
+	-webkit-box-shadow: 1px 1px 0 #000;
+	box-shadow: 1px 1px 0 #000;
+	
+}
+
+/* The video total volume line */
+.cj-vid-dark .cj-vid-vol-total {
+
+	background-color: #555;
+	
+	-moz-box-shadow: 1px 1px 0 #000;
+	-webkit-box-shadow: 1px 1px 0 #000;
+	box-shadow: 1px 1px 0 #000;
+	
+}
+
+/* The progress lines fo the video and volume */
+.cj-vid-dark .cj-vid-progress,
+.cj-vid-dark .cj-vid-vol-current {
+
+	background-color: #BBB;
+	
+}
+
+/* The video buffer line */
+.cj-vid-dark .cj-vid-buffer {
+
+	background-color: #555;
+	
+}
+
+/* Button divider */
+.cj-vid-dark .cj-divider-left {
+	
+	background-color: #000;
+	
+}
+
+/* Button divider */
+.cj-vid-dark .cj-divider-right {
+	
+	background-color: #444;
+	
+}
+
+/* The right-click menu */
+.cj-vid-dark .cj-context-menu {
+	
+	color: #C5C5C5;
+	border: 1px solid #555;
+	
+	background: #fefefe; 
+	background: -moz-linear-gradient(top, #222 0%, #333 100%); 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #222), color-stop(100%, #333)); 
+	background: -webkit-linear-gradient(top, #222 0%, #333 100%); 
+	background: -o-linear-gradient(top, #222 0%, #333 100%); 
+	background: -ms-linear-gradient(top, #222 0%, #333 100%); 
+	background: linear-gradient(to bottom, #222 0%, #333 100%);
+	
+}
+
+/* right-click menu item dividers */
+.cj-vid-dark .cj-context-menu li {
+	
+	border-top: 1px solid #444;
+	border-bottom: 1px solid #000;
+	
+}
+
+/* The right-click menu copyright text */
+.cj-vid-dark .cj-context-copyright span {
+	
+	background-color: #666;
+	color: #E5E5E5;
+	
+	-moz-box-shadow: inset 0 0 1px #999;
+	-webkit-box-shadow: inset 0 0 1px #999;
+	box-shadow: inset 0 0 1px #999;
+	
+}
+
+/* ********************************* */
+/* ********************************* */
+/*            TRANSITIONS            */
+/* ********************************* */
+/* ********************************* */
+
+.cj-fade-video,
+.cj-vid-controls,
+.cj-vid-social span,
+.cj-context-menu li,
+.cj-vid-element > .cj-vid-icon {
+
+	-webkit-transition: opacity 0.75s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+	-moz-transition: opacity 0.75s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+	-ms-transition: opacity 0.75s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+	transition: opacity 0.75s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+	
+}
+
+.cj-time-bubble,
+.cj-vid-play-btn {
+	
+	-webkit-transition: all 0.75s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+	-moz-transition: all 0.75s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+	-ms-transition: all 0.75s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+	transition: all 0.75s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+	
+}
+
+.cj-context-transition {
+
+	-webkit-transition: all 0.75s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+	-moz-transition: all 0.75s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+	-ms-transition: all 0.75s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+	transition: all 0.75s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+	
+}
+
+.cj-vid-vol-current {
+	
+	-webkit-transition: width 0.4s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+	-moz-transition: width 0.4s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+	-ms-transition: width 0.4s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+	transition: width 0.4s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+	
+}
+
+
+/* ********************************* */
+/* ********************************* */
+/*          BEGIN STRUCTURE          */
+/* ********************************* */
+/* ********************************* */
+
+html, body {
+
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	
+}
+
+/* The main video container */
+.cj-vid-container {
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+	width: 100%;
+	height: 100%;
+	
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	
+}
+
+/* The video control bar */
+.cj-vid-controls {
+	
+	width: 100%;
+	height: 29px;
+	position: absolute;
+	overflow: hidden;
+	bottom: 0;
+	
+}
+
+/* All control elements get this class */
+.cj-vid-element {
+
+	float: left;
+	height: 100%;
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	
+}
+
+/* Play pause hit area */
+.cj-vid-play-pause {
+	
+	width: 36px;
+	border-left: none !important;
+	
+}
+
+/* All buttons get this class */
+.cj-vid-icon {
+
+	position: absolute;
+	left: 10px;
+	
+}
+
+/* Small play button */
+.cj-vid-play {
+	
+	top: 5px;
+	left: 15px;
+	
+}
+
+/* The pause button */
+.cj-vid-pause {
+
+	display: none;
+	top: 5px;
+	left: 13px;
+	
+}
+
+/* The video time text */
+.cj-vid-time {
+
+	position: absolute;
+	left: 37px;
+	cursor: default;
+	
+	width: 85px;
+	float: none;
+	padding-top: 7px;
+	
+}
+
+/* The video scrub line container */
+.cj-vid-scrub {
+	
+	width: 601px;
+	cursor: default;
+	padding-top: 11px;
+	border: none !important;
+	
+}
+
+/* The video scrub progress and total lines */
+.cj-vid-line {
+
+	display: block;
+	position: absolute;
+	height: 6px;
+	
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+		
+}
+
+/* Video scrub total line */
+.cj-vid-total {
+	
+	width: 601px;
+	
+}
+
+/* Video scrub progress/buffer lines */
+.cj-vid-progress, cj-vid-buffer {
+
+	width: 0;
+	
+}
+
+/* The scrub line hit area */
+.cj-vid-hit {
+	
+	cursor: pointer;	
+	height: 100%;
+	width: 0;
+	
+	position: absolute;
+	left: 0;
+	top: -25%;
+	
+}
+
+/* The video on/off volume buttons */
+.cj-vid-vol-buttons {
+
+	width: 34px;
+	padding-top: 4px;
+	border-right: none !important;
+	
+}
+
+/* The video mute button */
+.cj-vid-mute {
+
+	display: none;
+	
+}
+
+/* The video volume lines container */
+.cj-vid-vol-lines {
+
+	width: 55px;
+	border: none !important;
+	padding-top: 11px;
+	
+}
+
+/* Video volume total line */
+.cj-vid-vol-total {
+	
+	width: 100%;
+	
+}
+
+/* Video current volume line */
+.cj-vid-vol-current {
+	
+	width: 75%;
+	
+}
+
+/* webkit mask for a quirky rounded corner bug fix */
+.cj-vid-vol-mask {
+	
+	width: 100%;
+	
+	-webkit-mask-image: -webkit-linear-gradient(top, #000 0%, #000 100%); 
+	-webkit-border-radius: 4px;
+	
+}
+
+/* webkit no border for a quirky rounded corner bug fix */
+.cj-vol-no-border {
+
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	
+	position: static;
+	
+}
+
+/* The social buttons container */
+.cj-vid-social {
+
+	padding: 4px 10px 0 10px;
+	cursor: auto;
+	
+}
+
+/* Individual social buttons */
+.cj-vid-social span {
+
+	padding: 0 5px 0 5px;
+	display: inline-block;
+	height: 100%;
+	cursor: pointer;
+	
+}
+
+/* First social button */
+.cj-vid-social span:first-child {
+
+	padding-left: 0;
+	
+}
+
+/* Last social button */
+.cj-vid-social span:last-child {
+
+	padding-right: 0;
+	
+}
+
+/* The fullscreen/normalscreen buttons container */
+.cj-vid-fullscreen {
+
+	width: 34px;
+	padding-top: 3px;
+	border-right: none !important;
+	
+}
+
+/* The fullscreen button */
+.cj-vid-full {
+
+	font-size: 19px;
+
+}
+
+/* The normalscreen button */
+.cj-vid-normal {
+	
+	font-size: 19px;
+	display: none;
+	
+}
+
+/* Control element divider */
+.cj-divider-left {
+	
+	width: 1px;
+	height: 100%;
+	margin-left: 87px;
+	margin-right: 10px;
+	float: left;
+	
+}
+
+/* Control element divider */
+.cj-divider-right {
+	
+	width: 1px;
+	height: 100%;
+	margin-left: 10px;
+	float: left;
+	
+}
+
+/* The time bubble that pops up when you hover over the video scrub line */
+.cj-time-bubble {
+	
+	position: absolute;
+	bottom: 37px;
+	left: 50%;
+	
+	opacity: 0;
+	visibility: hidden;
+	display: inline-block;
+	pointer-events: none;
+	
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	
+	padding: 5px 8px 5px 8px;
+	
+}
+
+/* Time bubble active state */
+.cj-time-bubble-active {
+
+	opacity: 1;
+	visibility: visible;
+		
+}
+
+/* Time bubble arrow */
+.cj-time-bubble:after {
+	
+	width: 0; 
+	height: 0; 
+	content: "";
+
+	position: absolute;
+	bottom: -8px;
+	left: 55%;
+	
+}
+
+/* Gets applied to the HTML5 video element */
+.cj-video {
+	
+	width: 100%;
+	height: 100%;
+	
+	outline: none;
+	padding: 0;
+	margin: 0;
+	
+}
+
+/* The big play button */
+.cj-vid-play-btn {
+	
+	overflow: hidden;
+	line-height: none;
+	
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -54px 0 0 -21px;
+	
+	cursor: pointer;	
+	display: block;
+	
+}
+
+/* Big play button on mouse over */
+.cj-vid-play-btn:hover {
+
+	opacity: 1;
+	
+}
+
+/* Gets applied to the big play button when hidden */
+.cj-item-inactive {
+	
+	opacity: 0;
+	cursor: default;
+	visibility: hidden;
+	
+}
+
+/* Gets applied to the context menu when hidden */
+.cj-ctx-inactive {
+	
+	pointer-events: none;
+	
+}
+
+
+/* Makes sure the big play button doesn't fade in when inactive */
+.cj-item-inactive:hover {
+
+	opacity: 0;
+	
+}
+
+/* The right-click menu */
+.cj-context-menu {
+	
+	position: absolute;
+	top: 300px;
+	left: 100px;
+	padding: 5px 10px 5px 10px;
+	
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	
+}
+
+/* Right click menu list */
+.cj-context-menu ul {
+
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	
+}
+
+/* Right click menu items */
+.cj-context-menu li {
+	
+	list-style-type: none;
+	cursor: pointer;
+	
+	padding: 5px 0 5px 0;
+	
+}
+
+/* Right click menu first item */
+.cj-context-menu li:first-child {
+
+	border-top: none;
+	
+}
+
+/* Right click menu last item */
+.cj-context-menu li:last-child {
+
+	border-bottom: none;
+	
+}
+
+/* Gets applied to right click menu inactive items */
+.cj-context-inactive {
+
+	cursor: default !important;
+	
+}
+
+/* Gets applied to right-click menu inactive item text */
+.cj-context-inactive span {
+
+	opacity: 0.5 !important;
+	
+}
+
+/* The right click menu copyright container */
+.cj-context-copyright {
+
+	text-align: center;
+	padding-top: 10px !important;
+	
+}
+
+/* The right click menu copyright text */
+.cj-context-copyright span {
+	
+	display: inline-block;
+	white-space: nowrap;
+	padding: 3px 6px 3px 6px;
+	font-size: 10px;
+	
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	
+}
+
+/* Gets applied after a 3 second delay in fullscreen mode */
+.cj-hide-mouse {
+
+	cursor: none;
+	
+}
+
+/* Gets applied to the optional video poster */
+.cj-poster {
+	
+	pointer-events: none;
+	position: absolute; 
+	top: 0;
+	left: 0;
+	
+}
+
+/* Message to be displayed if the user doesn't have Flash installed */
+#myflash a {
+
+	position: fixed;
+	top: 20px;
+	left: 20px;
+	z-index: 999;
+	
+}
+
+#myflash a img {
+
+	border: none;
+	
+}
+
+/* Hides some elements in case the user resizes their browser to a very small size */
+@media screen and (max-width: 480px) {
+	
+	.cj-vid-vol-buttons, .cj-vid-vol-lines, .cj-vid-social, .cj-divider-last {
+	
+		display: none;
+		
+	}
+	
+}
+
+
+
+
+
+
+
+
