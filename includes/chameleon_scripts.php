@@ -52,6 +52,8 @@
 
   function new_vid_shortcode($atts) {
     $new_atts = array(
+      "width" => $atts['width'],
+      "height" => $atts['height'],
       "video" => $atts['mp4']
     );
     return chameleon_process_shortcode($new_atts);
